@@ -40,8 +40,8 @@
         </g>
         <g data-binding-server="S2">
             <rect x="320" y="110" width="80" height="80" />
-            <rect x="325" y="115" width="20" height="20" data-binding-application="A1" data-class-1="status" data-class-2="important" autohide="true" />
-            <rect x="325" y="145" width="20" height="20" data-binding-application="A2" data-class-1="status" data-class-2="important" autohide="true" />
+            <rect x="325" y="115" width="20" height="20" data-binding-application="A1" data-class-1="status" data-class-2="important" auto-hide="true" />
+            <rect x="325" y="145" width="20" height="20" data-binding-application="A2" data-class-1="status" data-class-2="important" auto-hide="true" />
         </g>
     </g>
 </svg>
