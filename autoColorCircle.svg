@@ -1,0 +1,40 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect x="50" y="50" width="100" height="50" fill="lightgray"></rect>
+  <text x="85" y="80" fill="black">Start</text>
+  <circle cx="100" cy="125" r="25" fill="red"></circle>
+  <script>
+    // <![CDATA[
+    const circle = document.querySelector("circle");
+    let interval;
+
+    function getColor() {
+      const R = Math.round(Math.random() * 255)
+        .toString(16)
+        .padStart(2, "0");
+
+      const G = Math.round(Math.random() * 255)
+        .toString(16)
+        .padStart(2, "0");
+
+      const B = Math.round(Math.random() * 255)
+        .toString(16)
+        .padStart(2, "0");
+
+      return `#${R}${G}${B}`;
+    }
+
+    function toggleAutoColor() {
+      if (interval) {
+        clearInterval(interval);
+        interval = null;
+      } else {
+        interval = setInterval(() => {
+          circle.style.fill = getColor();
+        }, 1000);
+      }
+    }
+
+    document.querySelector("rect").addEventListener("click", toggleAutoColor);
+    // ]]>
+  </script>
+</svg>
