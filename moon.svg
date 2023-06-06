@@ -1,18 +1,9 @@
 <svg width="200" height="200" version="1.2" viewbox="0 0 3000 3000" xmlns="http://www.w3.org/2000/svg">
-<style>
-  .circle1 {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background: linear-gradient(to right, red 25%, black 0%);
-  }
-  .circle2 {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background: linear-gradient(to right, red 50%, black 0%);
-  }
-</style>
-<div class="circle1"></div>
-  <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+  <defs>
+    <linearGradient id="color-gradient" x1="0%" y1="0%" x2="100%" y2="0%">    
+      <stop offset="0.3" style="stop-color: red;" />      
+      <stop offset="0" style="stop-color: black;" />
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="100" fill="url(#color-gradient)" />
 </svg>
