@@ -22,10 +22,10 @@ transform: rotate(0deg);
   </defs>
   <line
     id="arrow"
-    x1="100"
-    y1="50"
-    x2="100"
-    y2="150"
+    x1="0"
+    y1="-50"
+    x2="0"
+    y2="50"
     stroke="black"
     stroke-width="2"
     marker-end="url(#arrowhead)"
