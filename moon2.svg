@@ -1,4 +1,4 @@
-<svg width="200" height="200" transform="rotate(270)">
+<svg width="200" height="200" version="1.2" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" transform="rotate(270)">
  <style>
   .NewMoon {
     fill: url(#NewMoon-gradient);
