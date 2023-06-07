@@ -1,9 +1,64 @@
-<svg width="200" height="200" version="1.2" viewbox="0 0 3000 3000" xmlns="http://www.w3.org/2000/svg">
+<svg width="200" height="200" transform="rotate(270)">
+ <style>
+  .NewMoon {
+    fill: url(#NewMoon-gradient);
+  }
+  .WaxingCrecent {
+    fill: url(#WaxingCrecent-gradient);
+  }
+  .FirstQuarter {
+    fill: url(#FirstQuarter-gradient);
+  }
+  .WaxingGibbous {
+    fill: url(#WaxingGibbous-gradient);
+  }
+  .FullMoon {
+    fill: url(#FullMoon-gradient);
+  }
+  .WaningGibbous {
+    fill: url(#WaningGibbous-gradient);
+  }
+  .ThirdQuarter {
+    fill: url(#ThirdQuarter-gradient);
+  }
+  .WaningCrescent {
+    fill: url(#WaningCrescent-gradient);
+  }
+ </style>
   <defs>
-    <linearGradient id="color-gradient" x1="0%" y1="0%" x2="100%" y2="0%">    
-      <stop data-binding-city="Kaunas" data-class-1="moonphasename" offset="0.3" style="stop-color: grey;" />      
-      <stop offset="0" style="stop-color: black;" />
+    <linearGradient id="NewMoon-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="lightgrey" />
+      <stop offset="0%" stop-color="black" />
     </linearGradient>
+    <linearGradient id="WaxingCrecent-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="80%" stop-color="black" />
+      <stop offset="0%" stop-color="lightgrey" />
+    </linearGradient>
+    <linearGradient id="FirstQuarter-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="50%" stop-color="black" />
+      <stop offset="0%" stop-color="lightgrey" />
+    </linearGradient>
+    <linearGradient id="WaxingGibbous-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="20%" stop-color="black" />
+      <stop offset="0%" stop-color="lightgrey" />
+    </linearGradient>
+    <linearGradient id="FullMoon-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="100%" stop-color="lightgrey" />
+      <stop offset="0%" stop-color="black" />
+    </linearGradient>
+    <linearGradient id="WaningGibbous-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="80%" stop-color="lightgrey" />
+      <stop offset="0%" stop-color="black" />      
+    </linearGradient>
+    <linearGradient id="ThirdQuarter-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="50%" stop-color="lightgrey" />
+      <stop offset="0%" stop-color="black" />
+    </linearGradient>
+    <linearGradient id="WaningCrescent-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="20%" stop-color="lightgrey" />
+      <stop offset="0%" stop-color="black" />
+    </linearGradient>
+    
   </defs>
-  <circle cx="100" cy="100" r="100" fill="url(#color-gradient)" />
+  <circle cx="100" cy="100" r="100" data-binding-city="Kaunas" data-class-1="moonphasename" class="FullMoon" />
 </svg>
