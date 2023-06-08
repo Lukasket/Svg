@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="60" version="1.2" viewBox="0 0 40 60">
   <defs>
     <linearGradient id="gradient" gradientTransform="rotate(90)">
-      <stop offset="0.3" data-binding-city="Kaunas" data-attr-offset="humidity" stop-color="#005B9A" />
+      <stop offset="80.3" data-binding-city="Kaunas" data-attr-offset="humidity" stop-color="#005B9A" />
       <stop offset="0%" stop-color="#67BCEA" />
     </linearGradient>
   </defs>
   <path d="M20,0 C10,10 0,25 0,40 C0,55 10,60 20,60 C30,60 40,55 40,40 C40,25 30,10 20,0 Z" fill="url(#gradient)" transform="rotate(180 20 30)" />
-  <text x="50%" y="50%" text-anchor="middle" alignment-baseline="middle" font-size="12" fill="white">10,0</text>
+  <text x="50%" y="50%" text-anchor="middle" alignment-baseline="middle" font-size="12" fill="white" data-binding-city="Kaunas" data-value="humidity"></text>
 </svg>
