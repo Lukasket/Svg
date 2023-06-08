@@ -12,5 +12,5 @@
            C 145 90, 115 90, 100 80
            C 85 90, 55 90, 40 80
            C 10 80, 10 60, 25 50" fill="url(#drop-gradient)" stroke="#000000" stroke-width="2"/>
-  <text x="100" y="60" text-anchor="middle" dominant-baseline="middle" font-family="Arial" font-size="30" fill="white">0</text>
+  <text x="100" y="60" data-binding-city="Kaunas" data-value="cloudcover" text-anchor="middle" dominant-baseline="middle" font-family="Arial" font-size="30" fill="white">0</text>
 </svg>
